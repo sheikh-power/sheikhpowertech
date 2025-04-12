@@ -1,11 +1,10 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sheikh Power Tech</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     * {
       margin: 0; padding: 0; box-sizing: border-box;
@@ -15,6 +14,7 @@
       background: #111;
       color: #fff;
       line-height: 1.6;
+      scroll-behavior: smooth;
     }
     header {
       background: #e60000;
@@ -22,29 +22,58 @@
       text-align: center;
     }
     header h1 {
-      font-size: 2em;
+      font-size: 2.5em;
       color: #fff;
+      letter-spacing: 1px;
     }
     nav {
       background: #000;
       display: flex;
       justify-content: center;
       padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     nav a {
       color: #fff;
       margin: 0 15px;
       text-decoration: none;
       font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #e60000;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1581090700227-1e8eaff45c3f') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px 20px;
+      border-radius: 10px;
     }
     section {
       padding: 50px 20px;
       max-width: 1000px;
       margin: auto;
+      animation: fadeIn 1s ease;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
     }
     h2 {
       color: #e60000;
       margin-bottom: 20px;
+      font-size: 1.8rem;
     }
     .services, .portfolio {
       display: grid;
@@ -55,6 +84,17 @@
       background: #222;
       padding: 20px;
       border-radius: 8px;
+      text-align: center;
+      transition: 0.3s ease;
+    }
+    .service-box:hover, .portfolio-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+    .service-box i {
+      font-size: 2em;
+      color: #e60000;
+      margin-bottom: 10px;
     }
     footer {
       background: #000;
@@ -82,49 +122,50 @@
 <body>
   <header>
     <h1>Sheikh Power Tech</h1>
-  </header>
-
-  <nav>
+  </header>  <nav>
     <a href="#home">Home</a>
     <a href="#services">Services</a>
     <a href="#portfolio">Portfolio</a>
     <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="home">
+  </nav>  <div class="hero">
+    <h2>Your Trusted Electrician Partner</h2>
+  </div>  <section id="home">
     <h2>Welcome</h2>
     <p>We provide professional electrical solutions for homes and businesses. Quality, safety, and reliability are our top priorities.</p>
-  </section>
-
-  <section id="services">
+  </section>  <section id="services">
     <h2>Our Services</h2>
     <div class="services">
-      <div class="service-box">Residential Wiring</div>
-      <div class="service-box">Commercial Installation</div>
-      <div class="service-box">Panel Board Setup</div>
-      <div class="service-box">MCB & DB Distribution</div>
+      <div class="service-box">
+        <i class="fas fa-plug"></i>
+        Residential Wiring
+      </div>
+      <div class="service-box">
+        <i class="fas fa-building"></i>
+        Commercial Installation
+      </div>
+      <div class="service-box">
+        <i class="fas fa-tachometer-alt"></i>
+        Panel Board Setup
+      </div>
+      <div class="service-box">
+        <i class="fas fa-bolt"></i>
+        MCB & DB Distribution
+      </div>
     </div>
-  </section>
-
-  <section id="portfolio">
+  </section>  <section id="portfolio">
     <h2>Portfolio</h2>
     <div class="portfolio">
       <div class="portfolio-box">Project 1</div>
       <div class="portfolio-box">Project 2</div>
       <div class="portfolio-box">Project 3</div>
     </div>
-  </section>
-
-  <section id="contact">
+  </section>  <section id="contact">
     <h2>Contact Us</h2>
     <p>Phone: +91 6290814276</p>
     <p>Email: info@sheikhpowertech.com</p>
-  </section>
-
-  <footer>
+  </section>  <footer>
     &copy; 2025 Sheikh Power Tech. All rights reserved.
-  </footer>
+  </footer><a class="whatsapp-chat" href="https://wa.me/916290814276" target="_blank"><i class="fab fa-whatsapp"></i></a>
 
-  <a class="whatsapp-chat" href="https://wa.me/916290814276" target="_blank">&#x2709;</a>
 </body>
 </html>
