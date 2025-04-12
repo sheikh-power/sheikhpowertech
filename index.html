@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sheikh Power Tech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #111;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background: #e60000;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2em;
+      color: #fff;
+    }
+    nav {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #e60000;
+      margin-bottom: 20px;
+    }
+    .services, .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .service-box, .portfolio-box {
+      background: #222;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 20px;
+      color: #999;
+    }
+    .whatsapp-chat {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 12px 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 22px;
+      box-shadow: 0 0 10px #000;
+    }
+    .whatsapp-chat:hover {
+      background: #1ebe5d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sheikh Power Tech</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome</h2>
+    <p>We provide professional electrical solutions for homes and businesses. Quality, safety, and reliability are our top priorities.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-box">Residential Wiring</div>
+      <div class="service-box">Commercial Installation</div>
+      <div class="service-box">Panel Board Setup</div>
+      <div class="service-box">MCB & DB Distribution</div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <div class="portfolio-box">Project 1</div>
+      <div class="portfolio-box">Project 2</div>
+      <div class="portfolio-box">Project 3</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: +91 6290814276</p>
+    <p>Email: info@sheikhpowertech.com</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Sheikh Power Tech. All rights reserved.
+  </footer>
+
+  <a class="whatsapp-chat" href="https://wa.me/916290814276" target="_blank">&#x2709;</a>
+</body>
+</html>
